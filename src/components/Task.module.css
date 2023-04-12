@@ -1,0 +1,44 @@
+.taskContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 46rem;
+	height: 4.5rem;
+}
+
+.taskContainer + .taskContainer {
+	margin-top: 0.75rem;
+}
+
+.trashContainer {
+	transition: background-color 0.1s;
+	width: 1.5rem;
+	height: 1.5rem;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.trashContainer:hover {
+	background-color: var(--gray-400);
+	border-radius: 4px;
+}
+
+.trashContainer img {
+	height: 0.875rem;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.inputContainer p {
+	padding-left: 0.75rem;
+	font-size: 0.875rem;
+
+	color: var(--gray-100);
+}
